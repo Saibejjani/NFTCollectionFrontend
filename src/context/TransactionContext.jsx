@@ -2,12 +2,12 @@ import React, { useEffect, useState } from "react";
 import { ethers } from "ethers";
 import NFTGen from "../utils/NFTGen.json";
 import NFTCol from "../utils/NFTCol.json";
+import { contractAddress } from "../utils/constants";
 
 export const TransactionContext = React.createContext();
 
 export const TransactionProvider = ({ children }) => {
   const [currentAccount, setCurrentAccount] = useState("");
-  const contractAddress = "0x000c3b547eA7d55e861A586eaa74c46A4df6CeE7";
   const [formData, setFormData] = useState({
     Name: "",
     Symbol: "",

@@ -1,5 +1,1 @@
-import genAbi from "./NFTGenrator.json";
-
-export const contractAddress = "0x32467b43BFa67273FC7dDda0999Ee9A12F2AaA08";
-
-export const GenratorABI = genAbi.abi;
+export const contractAddress = "0x000c3b547eA7d55e861A586eaa74c46A4df6CeE7";
