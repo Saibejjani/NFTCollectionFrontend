@@ -1,7 +1,23 @@
+import { Routes, Route } from "react-router-dom";
+
 import "./App.css";
 
-function App() {
-  return <h1>hello</h1>;
+import Home from "./routes/Home/Home";
+import Navbar from "./routes/Navbar/Navbar";
+
+const App = () => {
+  return (
+    <Routes Routes >
+      <Route path="/" element={<Navbar />}>
+          <Route index element={<Home />} />
+      </Route>
+    </Routes>
+  );
+
+
+
+
+
 }
 
 export default App;
