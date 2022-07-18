@@ -1,15 +1,21 @@
+
+import { Routes, Route } from "react-router-dom";
 import { useContext } from "react";
+
 import "./App.css";
-// import { TransactionContext } from "./context/TransactionContext";
+
+import Home from "./routes/Home/Home";
+import Navbar from "./routes/Navbar/Navbar";
 
 const App = () => {
-  // const { fetchColletions, connectWallet, fetchThisCollection } =
-  //   useContext(TransactionContext);
   return (
-    <div>
-      <h1>hello</h1>
-    </div>
+    <Routes Routes >
+      <Route path="/" element={<Navbar />}>
+          <Route index element={<Home />} />
+      </Route>
+    </Routes>
   );
-};
+}
+
 
 export default App;
