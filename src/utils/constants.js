@@ -1,7 +1,1 @@
-import genAbi from "./NFTGenrator.json";
-import colAbi from "./NFTContract.json";
-
-export const contractAddress = "0x61c36a8d610163660E21a8b7359e1Cac0C9133e1";
-
-export const GenratorABI = genAbi.abi;
-export const CollectionABI = colAbi.abi;
+export const contractAddress = "0x000c3b547eA7d55e861A586eaa74c46A4df6CeE7";
